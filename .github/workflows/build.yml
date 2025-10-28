@@ -49,4 +49,5 @@ jobs:
 
       - name: Cleanup
         if: always()
-          run: rm -rf ~/.ssh
+        run: |
+          rm -rf ~/.ssh
