@@ -29,21 +29,24 @@ jobs:
           chmod 600 ~/.ssh/deploy_key
           ssh-keyscan -H ${{ secrets.SSH_HOST }} >> ~/.ssh/known_hosts
 
-      - name: Copy files to server
+      - name: Copy application files to server
+        run: |
+          ssh -i ~/.ssh/deploy_key ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }} "mkdir -p ${{ secrets.DEPLOY_PATH }}"
+          scp -i ~/.ssh/deploy_key -r * ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }}:${{ secrets.DEPLOY_PATH }}/
+
+      - name: Copy Docker image to server
         run: |
           scp -i ~/.ssh/deploy_key sparkbank-app.tar ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }}:${{ secrets.DEPLOY_PATH }}/
-          scp -i ~/.ssh/deploy_key docker-compose.yml ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }}:${{ secrets.DEPLOY_PATH }}/
-          scp -i ~/.ssh/deploy_key nginx.conf ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }}:${{ secrets.DEPLOY_PATH }}/
-          scp -i ~/.ssh/deploy_key Dockerfile ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }}:${{ secrets.DEPLOY_PATH }}/
 
       - name: Deploy on server
         run: |
           ssh -i ~/.ssh/deploy_key ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }} << 'ENDSSH'
             cd ${{ secrets.DEPLOY_PATH }}
+            docker-compose down
+            docker rmi sparkbank-app:latest || true
             docker load < sparkbank-app.tar
             rm sparkbank-app.tar
-            docker-compose down
-            docker-compose up -d --remove-orphans
+            docker-compose up -d --remove-orphans --force-recreate
             docker image prune -f
           ENDSSH
 
