@@ -13,7 +13,7 @@
             padding: 0;
             box-sizing: border-box;
         }
-        
+
         body {
             font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
             background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
@@ -21,7 +21,7 @@
             line-height: 1.6;
             min-height: 100vh;
         }
-        
+
         .container {
             max-width: 1200px;
             margin: 0 auto;
@@ -29,7 +29,7 @@
             min-height: 100vh;
             box-shadow: 0 0 60px rgba(0,0,0,0.3);
         }
-        
+
         /* Header */
         .header {
             background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
@@ -40,34 +40,34 @@
             align-items: center;
             box-shadow: 0 2px 10px rgba(0,0,0,0.1);
         }
-        
+
         .logo {
             display: flex;
             align-items: center;
             gap: 15px;
         }
-        
+
         .logo-icon {
             font-size: 36px;
         }
-        
+
         .logo-text h1 {
             font-size: 28px;
             font-weight: 700;
             margin-bottom: 2px;
         }
-        
+
         .logo-text p {
             font-size: 13px;
             opacity: 0.9;
             font-weight: 300;
         }
-        
+
         .user-info {
             text-align: right;
             font-size: 14px;
         }
-        
+
         /* Navigation */
         .nav {
             background: #f8f9fa;
@@ -76,7 +76,7 @@
             display: flex;
             box-shadow: 0 2px 5px rgba(0,0,0,0.05);
         }
-        
+
         .nav a {
             color: #495057;
             text-decoration: none;
@@ -89,52 +89,52 @@
             align-items: center;
             gap: 8px;
         }
-        
+
         .nav a:hover {
             background: white;
             color: #2a5298;
             border-bottom-color: #2a5298;
         }
-        
+
         .nav a.active {
             background: white;
             color: #2a5298;
             border-bottom-color: #2a5298;
         }
-        
+
         /* Content */
         .content {
             padding: 40px;
             min-height: calc(100vh - 250px);
         }
-        
+
         .section {
             display: none;
             animation: fadeIn 0.5s ease;
         }
-        
+
         .section.active {
             display: block;
         }
-        
+
         @keyframes fadeIn {
             from { opacity: 0; transform: translateY(10px); }
             to { opacity: 1; transform: translateY(0); }
         }
-        
+
         h2 {
             color: #1e3c72;
             font-size: 28px;
             margin-bottom: 10px;
             font-weight: 600;
         }
-        
+
         .subtitle {
             color: #6c757d;
             font-size: 16px;
             margin-bottom: 30px;
         }
-        
+
         /* Cards */
         .card {
             background: white;
@@ -145,12 +145,12 @@
             border: 1px solid #e9ecef;
             transition: all 0.3s ease;
         }
-        
+
         .card:hover {
             box-shadow: 0 5px 25px rgba(0,0,0,0.12);
             transform: translateY(-2px);
         }
-        
+
         .card-header {
             font-size: 18px;
             font-weight: 600;
@@ -159,12 +159,12 @@
             padding-bottom: 12px;
             border-bottom: 2px solid #e9ecef;
         }
-        
+
         /* Form Elements */
         .form-group {
             margin-bottom: 25px;
         }
-        
+
         .form-group label {
             display: block;
             font-weight: 500;
@@ -172,7 +172,7 @@
             color: #495057;
             font-size: 14px;
         }
-        
+
         .form-control {
             width: 100%;
             padding: 12px 16px;
@@ -182,18 +182,18 @@
             transition: all 0.3s ease;
             font-family: inherit;
         }
-        
+
         .form-control:focus {
             outline: none;
             border-color: #2a5298;
             box-shadow: 0 0 0 3px rgba(42, 82, 152, 0.1);
         }
-        
+
         select.form-control {
             cursor: pointer;
             background: white;
         }
-        
+
         /* Buttons */
         .btn {
             padding: 12px 28px;
@@ -208,50 +208,50 @@
             gap: 8px;
             font-family: inherit;
         }
-        
+
         .btn-primary {
             background: linear-gradient(135deg, #2a5298 0%, #1e3c72 100%);
             color: white;
         }
-        
+
         .btn-primary:hover {
             transform: translateY(-2px);
             box-shadow: 0 5px 20px rgba(42, 82, 152, 0.4);
         }
-        
+
         .btn-secondary {
             background: #6c757d;
             color: white;
         }
-        
+
         .btn-secondary:hover {
             background: #5a6268;
             transform: translateY(-2px);
         }
-        
+
         .btn-success {
             background: #28a745;
             color: white;
         }
-        
+
         /* Tables */
         .table-container {
             overflow-x: auto;
             border-radius: 8px;
             box-shadow: 0 2px 10px rgba(0,0,0,0.05);
         }
-        
+
         table {
             width: 100%;
             border-collapse: collapse;
             background: white;
         }
-        
+
         thead {
             background: linear-gradient(135deg, #2a5298 0%, #1e3c72 100%);
             color: white;
         }
-        
+
         th {
             padding: 16px;
             text-align: left;
@@ -260,20 +260,20 @@
             text-transform: uppercase;
             letter-spacing: 0.5px;
         }
-        
+
         td {
             padding: 14px 16px;
             border-bottom: 1px solid #e9ecef;
         }
-        
+
         tbody tr:hover {
             background: #f8f9fa;
         }
-        
+
         tbody tr:last-child td {
             border-bottom: none;
         }
-        
+
         /* Account Info */
         .account-info {
             background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
@@ -282,33 +282,33 @@
             border-radius: 12px;
             margin-bottom: 30px;
         }
-        
+
         .account-info h3 {
             margin-bottom: 20px;
             font-size: 20px;
         }
-        
+
         .account-info table {
             background: rgba(255,255,255,0.1);
             backdrop-filter: blur(10px);
         }
-        
+
         .account-info td {
             color: white;
             border-bottom: 1px solid rgba(255,255,255,0.2);
             padding: 12px 16px;
         }
-        
+
         .account-info tbody tr:last-child td {
             border-bottom: none;
         }
-        
+
         .balance {
             font-size: 32px;
             font-weight: 700;
             text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
         }
-        
+
         /* Alert Boxes */
         .alert {
             padding: 16px 20px;
@@ -319,36 +319,36 @@
             gap: 12px;
             font-size: 15px;
         }
-        
+
         .alert-info {
             background: #cfe2ff;
             border-left: 4px solid #0d6efd;
             color: #084298;
         }
-        
+
         .alert-success {
             background: #d1e7dd;
             border-left: 4px solid #28a745;
             color: #0f5132;
         }
-        
+
         .alert-error {
             background: #f8d7da;
             border-left: 4px solid #dc3545;
             color: #842029;
         }
-        
+
         /* Loading */
         .loading {
             display: none;
             text-align: center;
             padding: 40px;
         }
-        
+
         .loading.show {
             display: block;
         }
-        
+
         .spinner {
             border: 4px solid #f3f3f3;
             border-top: 4px solid #2a5298;
@@ -358,23 +358,23 @@
             animation: spin 1s linear infinite;
             margin: 0 auto 15px;
         }
-        
+
         @keyframes spin {
             0% { transform: rotate(0deg); }
             100% { transform: rotate(360deg); }
         }
-        
+
         /* Amount Display */
         .amount-positive {
             color: #28a745;
             font-weight: 600;
         }
-        
+
         .amount-negative {
             color: #dc3545;
             font-weight: 600;
         }
-        
+
         /* Footer */
         .footer {
             background: #212529;
@@ -384,22 +384,22 @@
             font-size: 13px;
             line-height: 1.8;
         }
-        
+
         .footer-links {
             margin-top: 15px;
         }
-        
+
         .footer-links a {
             color: #adb5bd;
             text-decoration: none;
             margin: 0 15px;
             transition: color 0.3s ease;
         }
-        
+
         .footer-links a:hover {
             color: white;
         }
-        
+
         /* Features Grid */
         .features-grid {
             display: grid;
@@ -407,7 +407,7 @@
             gap: 25px;
             margin: 30px 0;
         }
-        
+
         .feature-card {
             background: white;
             padding: 30px;
@@ -417,28 +417,48 @@
             transition: all 0.3s ease;
             border: 1px solid #e9ecef;
         }
-        
+
         .feature-card:hover {
             transform: translateY(-5px);
             box-shadow: 0 8px 30px rgba(0,0,0,0.15);
         }
-        
+
         .feature-icon {
             font-size: 48px;
             margin-bottom: 15px;
         }
-        
+
         .feature-card h3 {
             color: #2a5298;
             margin-bottom: 10px;
             font-size: 18px;
         }
-        
+
         .feature-card p {
             color: #6c757d;
             font-size: 14px;
         }
-        
+
+        /* Web3 Styles */
+        .web3-wallet-status {
+            padding: 15px;
+            border-radius: 8px;
+            background: #f8f9fa;
+            margin-bottom: 20px;
+            border: 1px solid #e9ecef;
+        }
+
+        .web3-signature-box {
+            background: #fff3cd;
+            border-left: 4px solid #ffc107;
+            padding: 15px;
+            border-radius: 8px;
+            margin-top: 15px;
+            font-family: monospace;
+            font-size: 14px;
+            word-break: break-all;
+        }
+
         /* Responsive */
         @media (max-width: 768px) {
             .header {
@@ -446,15 +466,15 @@
                 text-align: center;
                 gap: 15px;
             }
-            
+
             .nav {
                 flex-direction: column;
             }
-            
+
             .content {
                 padding: 20px;
             }
-            
+
             .features-grid {
                 grid-template-columns: 1fr;
             }
@@ -477,7 +497,7 @@
                 <div style="font-size: 12px; opacity: 0.8;">Sichere Verbindung</div>
             </div>
         </div>
-        
+
         <!-- Navigation -->
         <div class="nav">
             <a href="#" onclick="showSection('home')" class="active" id="nav-home">
@@ -489,94 +509,97 @@
             <a href="#" onclick="showSection('ueberweisung')" id="nav-ueberweisung">
                 <span>💸</span> Überweisung
             </a>
+            <a href="#" onclick="showSection('web3')" id="nav-web3">
+                <span>🔗</span> Web3
+            </a>
             <a href="#" onclick="showSection('service')" id="nav-service">
                 <span>📞</span> Service
             </a>
         </div>
-        
+
         <!-- Content -->
         <div class="content">
             <!-- HOME / DASHBOARD -->
             <div id="home" class="section active">
                 <h2>Willkommen bei SparkBank Online</h2>
                 <p class="subtitle">Ihr modernes Banking-Erlebnis - sicher, schnell und einfach</p>
-                
+
                 <div class="alert alert-info">
                     <span>ℹ️</span>
                     <div>
-                        <strong>Neu:</strong> Jetzt mit Echtzeit-Überweisungen! Alle Transaktionen werden sofort ausgeführt und in unserer Datenbank gespeichert.
+                        <strong>Neu:</strong> Jetzt mit Echtzeit-Überweisungen und Web3-Integration! Alle Transaktionen werden sofort ausgeführt und in unserer Datenbank gespeichert.
                     </div>
                 </div>
-                
+
                 <div class="features-grid">
                     <div class="feature-card">
                         <div class="feature-icon">⚡</div>
                         <h3>Sofort-Überweisungen</h3>
                         <p>Überweisungen werden in Echtzeit ausgeführt und sofort verbucht</p>
                     </div>
-                    
+
+                    <div class="feature-card">
+                        <div class="feature-icon">🔗</div>
+                        <h3>Web3-Integration</h3>
+                        <p>Blockchain-basierte Signaturen und dezentrale Protokolle</p>
+                    </div>
+
                     <div class="feature-card">
                         <div class="feature-icon">🔒</div>
                         <h3>Höchste Sicherheit</h3>
                         <p>Verschlüsselte Verbindung und sichere Datenspeicherung</p>
                     </div>
-                    
+
                     <div class="feature-card">
                         <div class="feature-icon">📊</div>
                         <h3>Live Kontostand</h3>
                         <p>Ihr Kontostand wird in Echtzeit aktualisiert</p>
                     </div>
-                    
+
                     <div class="feature-card">
                         <div class="feature-icon">📱</div>
                         <h3>Überall verfügbar</h3>
                         <p>Banking rund um die Uhr von jedem Gerät aus</p>
                     </div>
-                    
+
                     <div class="feature-card">
                         <div class="feature-icon">📜</div>
                         <h3>Transaktionshistorie</h3>
                         <p>Alle Bewegungen jederzeit einsehbar</p>
                     </div>
-                    
-                    <div class="feature-card">
-                        <div class="feature-icon">💾</div>
-                        <h3>Datensicherung</h3>
-                        <p>Automatische Backups aller Transaktionen</p>
-                    </div>
                 </div>
             </div>
-            
+
             <!-- KONTOSTAND -->
             <div id="kontostand" class="section">
                 <h2>Kontostand & Umsätze</h2>
                 <p class="subtitle">Übersicht über Ihre Konten und letzten Transaktionen</p>
-                
+
                 <div class="card">
                     <div class="card-header">Konto auswählen</div>
-                    
+
                     <div class="form-group">
                         <label for="konto-select">Kontoauswahl</label>
                         <select id="konto-select" class="form-control">
                             <option value="">-- Bitte wählen Sie ein Konto --</option>
                         </select>
                     </div>
-                    
+
                     <div class="form-group">
                         <label for="konto-pin">PIN (optional)</label>
                         <input type="password" id="konto-pin" class="form-control" placeholder="****">
                     </div>
-                    
+
                     <button onclick="showKontostand()" class="btn btn-primary">
                         <span>🔍</span> Kontostand abrufen
                     </button>
                 </div>
-                
+
                 <div class="loading" id="loading-kontostand">
                     <div class="spinner"></div>
                     <p>Lade Kontodaten...</p>
                 </div>
-                
+
                 <div id="kontostand-result" style="display: none;">
                     <div class="account-info">
                         <h3>📋 Kontoinformationen</h3>
@@ -605,7 +628,7 @@
                             </tr>
                         </table>
                     </div>
-                    
+
                     <div class="card">
                         <div class="card-header">📊 Letzte Kontobewegungen</div>
                         <div class="table-container">
@@ -635,66 +658,66 @@
                     </div>
                 </div>
             </div>
-            
+
             <!-- ÜBERWEISUNG -->
             <div id="ueberweisung" class="section">
                 <h2>Neue Überweisung</h2>
                 <p class="subtitle">Geld sicher und schnell an andere Konten überweisen</p>
-                
+
                 <div class="alert alert-info">
                     <span>✅</span>
                     <div>
-                        Ihre Überweisung wird sofort ausgeführt und in der Datenbank gespeichert. 
+                        Ihre Überweisung wird sofort ausgeführt und in der Datenbank gespeichert.
                         Die Kontostände werden in Echtzeit aktualisiert.
                     </div>
                 </div>
-                
+
                 <div id="transfer-message"></div>
-                
+
                 <div class="card">
                     <div class="card-header">Überweisungsdetails</div>
-                    
+
                     <div class="form-group">
                         <label for="sender-account">Von Konto</label>
                         <select id="sender-account" class="form-control">
                             <option value="">-- Sender-Konto wählen --</option>
                         </select>
                     </div>
-                    
+
                     <div class="form-group">
                         <label for="receiver-account">An Konto</label>
                         <select id="receiver-account" class="form-control">
                             <option value="">-- Empfänger-Konto wählen --</option>
                         </select>
                     </div>
-                    
+
                     <div class="form-group">
                         <label for="transfer-amount">Betrag in EUR</label>
-                        <input 
-                            type="number" 
-                            id="transfer-amount" 
-                            class="form-control" 
-                            step="0.01" 
-                            min="0.01" 
+                        <input
+                            type="number"
+                            id="transfer-amount"
+                            class="form-control"
+                            step="0.01"
+                            min="0.01"
                             placeholder="0.00"
                         >
                     </div>
-                    
+
                     <div class="form-group">
                         <label for="transfer-description">Verwendungszweck</label>
-                        <input 
-                            type="text" 
-                            id="transfer-description" 
-                            class="form-control" 
+                        <input
+                            type="text"
+                            id="transfer-description"
+                            class="form-control"
                             placeholder="z.B. Miete, Gehalt, Rechnung"
                         >
                     </div>
-                    
+
                     <div class="loading" id="loading-transfer">
                         <div class="spinner"></div>
                         <p>Überweisung wird ausgeführt...</p>
                     </div>
-                    
+
                     <div style="display: flex; gap: 10px; margin-top: 25px;">
                         <button onclick="doTransfer()" class="btn btn-primary">
                             <span>💸</span> Überweisung ausführen
@@ -705,12 +728,58 @@
                     </div>
                 </div>
             </div>
-            
+
+            <!-- WEB3 SECTION -->
+            <div id="web3" class="section">
+                <h2>Web3 Protokoll-Demo</h2>
+                <p class="subtitle">Blockchain-basierte Signaturen und dezentrale Protokolle</p>
+
+                <div class="card">
+                    <div class="card-header">Wallet-Verbindung (Testmodus)</div>
+                    <button id="connectWallet" class="btn btn-success">
+                        <span>🔗</span> Test Wallet setzen
+                    </button>
+                    <div id="walletStatus"></div>
+                    <div id="walletAddress" class="web3-wallet-status" style="display: none;"></div>
+                </div>
+
+                <div class="card">
+                    <div class="card-header">Web3-Transaktion erstellen</div>
+                    <form id="web3TransferForm">
+                        <div class="form-group">
+                            <label for="web3-receiver">Empfänger-Adresse (0x...):</label>
+                            <input type="text" id="web3-receiver" class="form-control" required placeholder="0xReceiver..." />
+                        </div>
+
+                        <div class="form-group">
+                            <label for="web3-amount">Betrag (ETH):</label>
+                            <input type="number" id="web3-amount" class="form-control" min="0.0001" step="0.0001" required />
+                        </div>
+
+                        <button type="submit" class="btn btn-primary">
+                            <span>🔐</span> Signatur erstellen
+                        </button>
+                    </form>
+
+                    <div id="web3Output"></div>
+                </div>
+
+                <div class="card">
+                    <div class="card-header">Protokoll-Ablauf</div>
+                    <ol>
+                        <li>Exchange IP's</li>
+                        <li>/tx/%sender%/%receiver%/%amount%/%signature%</li>
+                        <li>Verify & store data</li>
+                        <li>Signatur: %sender%;%receiver%;%amount%</li>
+                    </ol>
+                </div>
+            </div>
+
             <!-- SERVICE -->
             <div id="service" class="section">
                 <h2>Kundenservice</h2>
                 <p class="subtitle">Wir sind für Sie da - rund um die Uhr</p>
-                
+
                 <div class="features-grid">
                     <div class="feature-card">
                         <div class="feature-icon">☎️</div>
@@ -718,14 +787,14 @@
                         <p style="margin: 15px 0;"><strong style="font-size: 20px; color: #2a5298;">0800 - 500 50 00</strong></p>
                         <p>Gebührenfrei - 24/7 erreichbar</p>
                     </div>
-                    
+
                     <div class="feature-card">
                         <div class="feature-icon">📧</div>
                         <h3>E-Mail Support</h3>
                         <p style="margin: 15px 0;"><strong>info@sparkbank.de</strong></p>
                         <p>Antwort innerhalb von 24 Stunden</p>
                     </div>
-                    
+
                     <div class="feature-card">
                         <div class="feature-icon">🏢</div>
                         <h3>Filialen</h3>
@@ -733,7 +802,7 @@
                         <p>Persönliche Beratung vor Ort</p>
                     </div>
                 </div>
-                
+
                 <div class="card">
                     <div class="card-header">📞 Kontakt & Öffnungszeiten</div>
                     <table>
@@ -757,30 +826,31 @@
                 </div>
             </div>
         </div>
-        
+
         <!-- Footer -->
         <div class="footer">
             <strong>SparkBank AG</strong> | Musterstraße 123 | 12345 Musterstadt<br>
-            Telefon: 0800-5005000 | E-Mail: info@sparkbank.de
-            
+            Telefon: 0800-5005000 | E-Mail: [info@sparkbank.de](mailto:info@sparkbank.de)
+
             <div class="footer-links">
                 <a href="#">Impressum</a>
                 <a href="#">Datenschutz</a>
                 <a href="#">AGB</a>
                 <a href="#">Sicherheit</a>
             </div>
-            
+
             <div style="margin-top: 15px; font-size: 11px; opacity: 0.7;">
                 © 2025 SparkBank AG. Alle Rechte vorbehalten.
             </div>
         </div>
     </div>
-    
+
     <script>
         let accounts = [];
         let currentAccount = null;
+        let web3Account = null;
 
-        // Konten beim Laden abrufen
+        // Bestehende Banking-Funktionen
         async function loadAccounts() {
             try {
                 const response = await fetch('/api.php?action=get_accounts');
@@ -791,28 +861,26 @@
             }
         }
 
-        // Konten in Dropdowns füllen
         function populateAccountSelects() {
             const senderSelect = document.getElementById('sender-account');
             const receiverSelect = document.getElementById('receiver-account');
             const kontoSelect = document.getElementById('konto-select');
-            
-            // Clear existing options except first
+
             [senderSelect, receiverSelect, kontoSelect].forEach(select => {
                 while (select.options.length > 1) {
                     select.remove(1);
                 }
             });
-            
+
             if (accounts && accounts.length > 0) {
                 accounts.forEach(acc => {
                     const balance = parseFloat(acc.balance).toFixed(2);
                     const displayText = `${acc.account_holder} - ${acc.account_number} (${balance} EUR)`;
-                    
+
                     const option1 = new Option(displayText, acc.account_number);
                     const option2 = new Option(displayText, acc.account_number);
                     const option3 = new Option(displayText, acc.account_number);
-                    
+
                     senderSelect.add(option1);
                     receiverSelect.add(option2);
                     kontoSelect.add(option3);
@@ -821,17 +889,14 @@
         }
 
         function showSection(sectionId) {
-            // Update section visibility
             const sections = document.querySelectorAll('.section');
             sections.forEach(section => section.classList.remove('active'));
             document.getElementById(sectionId).classList.add('active');
-            
-            // Update nav active state
+
             const navLinks = document.querySelectorAll('.nav a');
             navLinks.forEach(link => link.classList.remove('active'));
             document.getElementById('nav-' + sectionId).classList.add('active');
-            
-            // Load accounts if needed
+
             if (sectionId === 'kontostand' || sectionId === 'ueberweisung') {
                 loadAccounts();
             }
@@ -839,47 +904,45 @@
 
         async function showKontostand() {
             const accountNumber = document.getElementById('konto-select').value;
-            
+
             if (!accountNumber) {
                 showMessage('kontostand', 'Bitte wählen Sie ein Konto aus!', 'error');
                 return;
             }
-            
+
             const loading = document.getElementById('loading-kontostand');
             const resultDiv = document.getElementById('kontostand-result');
-            
+
             loading.classList.add('show');
             resultDiv.style.display = 'none';
-            
+
             try {
                 const response = await fetch(`/api.php?action=get_balance&account=${accountNumber}`);
                 const data = await response.json();
-                
+
                 loading.classList.remove('show');
-                
+
                 if (data.error) {
                     showMessage('kontostand', 'Fehler: ' + data.error, 'error');
                     return;
                 }
-                
+
                 currentAccount = data.account;
-                
-                // Kontoinformationen anzeigen
+
                 document.getElementById('account-holder').textContent = data.account.account_holder;
                 document.getElementById('account-number').textContent = data.account.account_number;
                 document.getElementById('account-iban').textContent = data.account.account_number;
                 document.getElementById('account-balance').textContent = parseFloat(data.account.balance).toFixed(2) + ' EUR';
-                
-                // Transaktionen anzeigen
+
                 const tbody = document.getElementById('transactions-tbody');
                 tbody.innerHTML = '';
-                
+
                 if (data.transactions && data.transactions.length > 0) {
                     data.transactions.forEach(trans => {
                         const row = tbody.insertRow();
                         const date = new Date(trans.transaction_date);
                         const isOutgoing = trans.sender_account === accountNumber;
-                        
+
                         row.insertCell(0).textContent = date.toLocaleDateString('de-DE', {
                             day: '2-digit',
                             month: '2-digit',
@@ -888,12 +951,12 @@
                             minute: '2-digit'
                         });
                         row.insertCell(1).textContent = trans.description || 'Überweisung';
-                        
+
                         const amountCell = row.insertCell(2);
                         const amount = parseFloat(trans.amount).toFixed(2);
                         amountCell.textContent = (isOutgoing ? '- ' : '+ ') + amount + ' EUR';
                         amountCell.className = isOutgoing ? 'amount-negative' : 'amount-positive';
-                        
+
                         const statusCell = row.insertCell(3);
                         statusCell.innerHTML = '<span style="color: #28a745;">✓ Abgeschlossen</span>';
                     });
@@ -906,9 +969,9 @@
                     cell.style.padding = '30px';
                     cell.style.color = '#6c757d';
                 }
-                
+
                 resultDiv.style.display = 'block';
-                
+
             } catch (error) {
                 loading.classList.remove('show');
                 showMessage('kontostand', 'Fehler beim Laden der Daten: ' + error.message, 'error');
@@ -920,25 +983,23 @@
             const receiver = document.getElementById('receiver-account').value;
             const amount = parseFloat(document.getElementById('transfer-amount').value);
             const description = document.getElementById('transfer-description').value;
-            
+
             const messageDiv = document.getElementById('transfer-message');
             messageDiv.innerHTML = '';
-            
-            // Validierung
+
             if (!sender || !receiver || !amount || amount <= 0) {
                 showMessage('ueberweisung', 'Bitte füllen Sie alle Felder korrekt aus!', 'error');
                 return;
             }
-            
+
             if (sender === receiver) {
                 showMessage('ueberweisung', 'Sender und Empfänger dürfen nicht identisch sein!', 'error');
                 return;
             }
-            
-            // Bestätigung
+
             const senderName = accounts.find(a => a.account_number === sender)?.account_holder || sender;
             const receiverName = accounts.find(a => a.account_number === receiver)?.account_holder || receiver;
-            
+
             if (!confirm(
                 `Überweisung bestätigen:\n\n` +
                 `Von: ${senderName}\n` +
@@ -949,10 +1010,10 @@
             )) {
                 return;
             }
-            
+
             const loading = document.getElementById('loading-transfer');
             loading.classList.add('show');
-            
+
             try {
                 const response = await fetch('/api.php?action=transfer', {
                     method: 'POST',
@@ -966,30 +1027,28 @@
                         description: description
                     })
                 });
-                
+
                 const data = await response.json();
-                
+
                 loading.classList.remove('show');
-                
+
                 if (data.error) {
                     showMessage('ueberweisung', data.error, 'error');
                 } else if (data.success) {
-                    showMessage('ueberweisung', 
+                    showMessage('ueberweisung',
                         `Überweisung erfolgreich durchgeführt!<br><br>` +
                         `<strong>Betrag:</strong> ${amount.toFixed(2)} EUR<br>` +
                         `<strong>Neuer Saldo Sender:</strong> ${parseFloat(data.sender_new_balance).toFixed(2)} EUR<br>` +
                         `<strong>Neuer Saldo Empfänger:</strong> ${parseFloat(data.receiver_new_balance).toFixed(2)} EUR`,
                         'success'
                     );
-                    
-                    // Formular zurücksetzen
+
                     document.getElementById('transfer-amount').value = '';
                     document.getElementById('transfer-description').value = '';
-                    
-                    // Konten neu laden
+
                     loadAccounts();
                 }
-                
+
             } catch (error) {
                 loading.classList.remove('show');
                 showMessage('ueberweisung', 'Fehler bei der Überweisung: ' + error.message, 'error');
@@ -997,21 +1056,20 @@
         }
 
         function showMessage(section, message, type) {
-            const messageDiv = section === 'ueberweisung' 
+            const messageDiv = section === 'ueberweisung'
                 ? document.getElementById('transfer-message')
                 : document.getElementById('kontostand-result');
-            
+
             const alertClass = type === 'success' ? 'alert-success' : 'alert-error';
             const icon = type === 'success' ? '✅' : '❌';
-            
+
             messageDiv.innerHTML = `
                 <div class="alert ${alertClass}">
                     <span>${icon}</span>
                     <div>${message}</div>
                 </div>
             `;
-            
-            // Scroll to message
+
             messageDiv.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
         }
 
@@ -1023,10 +1081,60 @@
             document.getElementById('transfer-message').innerHTML = '';
         }
 
-        // Beim Laden der Seite
+        // Web3-Funktionen
+        document.getElementById('connectWallet').onclick = () => {
+            web3Account = '0xDUMMY12345678901234567890123456789012345678';
+            document.getElementById('walletAddress').innerHTML = '<strong>Test-Wallet verbunden:</strong><br>' + web3Account;
+            document.getElementById('walletAddress').style.display = 'block';
+            document.getElementById('walletStatus').innerHTML = '<div class="alert alert-success"><span>✅</span><div>Demo-Wallet erfolgreich aktiviert!</div></div>';
+        };
+
+        document.getElementById('web3TransferForm').onsubmit = async (event) => {
+            event.preventDefault();
+            if (!web3Account) {
+                document.getElementById('web3Output').innerHTML = '<div class="alert alert-error"><span>❌</span><div>Bitte erst Test-Wallet verbinden!</div></div>';
+                return;
+            }
+
+            const receiver = document.getElementById('web3-receiver').value.trim();
+            const amountNum = parseFloat(document.getElementById('web3-amount').value);
+
+            if (!receiver.match(/^0x[a-fA-F0-9]{40}$/)) {
+                document.getElementById('web3Output').innerHTML = '<div class="alert alert-error"><span>❌</span><div>Ungültige Empfänger-Adresse!</div></div>';
+                return;
+            }
+
+            if (isNaN(amountNum) || amountNum <= 0) {
+                document.getElementById('web3Output').innerHTML = '<div class="alert alert-error"><span>❌</span><div>Betrag muss > 0 sein!</div></div>';
+                return;
+            }
+
+            const protocolString = `${web3Account};${receiver};${amountNum}`;
+            const signature = 'DUMMY_SIGNATURE_' + Math.random().toString(36).substr(2,8);
+            const url = `/tx/${web3Account}/${receiver}/${amountNum}/${signature}`;
+
+            let output = `
+                <div class="alert alert-success">
+                    <span>✅</span>
+                    <div>Web3-Protokoll erfolgreich erstellt!</div>
+                </div>
+                <div style="background: #eff2fa; padding: 15px; border-radius: 8px; font-family: monospace; margin-bottom: 15px;">
+                    <strong>Protokoll-URL:</strong><br>
+                    ${url}
+                </div>
+                <div class="web3-signature-box">
+                    <strong>Signierte Daten:</strong><br>
+                    ${protocolString}<br><br>
+                    <strong>Dummy-Signatur:</strong><br>
+                    ${signature}
+                </div>
+            `;
+            document.getElementById('web3Output').innerHTML = output;
+        };
+
         window.addEventListener('load', () => {
             loadAccounts();
-            console.log('SparkBank Online Banking geladen - Backend API verbunden');
+            console.log('SparkBank Online Banking mit Web3 geladen');
         });
     </script>
 </body>
